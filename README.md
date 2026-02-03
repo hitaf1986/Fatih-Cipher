@@ -1,148 +1,112 @@
-# Fatih-Cipher<!DOCTYPE html>
-<html lang="de">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Der Fatih‑Cipher — Zweisprachiges Whitepaper</title>
+# Der Fatih‑Cipher  
+### Ein strukturelles Kryptosystem · Version 3.0 — Finale Whitepaper‑Edition
 
-<style>
-    body {
-        margin: 0;
-        padding: 0;
-        font-family: system-ui, sans-serif;
-        background: #f7f7f7;
-        color: #222;
-        line-height: 1.6;
-    }
+---
 
-    header {
-        background: #0a0a23;
-        color: white;
-        padding: 40px 20px;
-        text-align: center;
-    }
+## 🧩 Überblick
 
-    h1 {
-        margin: 0;
-        font-size: 2.4rem;
-        letter-spacing: 0.5px;
-    }
+Der **Fatih‑Cipher** ist ein strukturelles Kryptosystem, das auf  
+geometrischen Formsequenzen und semantischen Index‑Codes basiert.  
+Es kombiniert deterministische Codierung (v2) mit reversiblen Transformationen (v3)  
+und bildet so ein einzigartiges, modulares und konzeptionell offenes Verfahren.
 
-    .container {
-        display: flex;
-        flex-wrap: wrap;
-        padding: 20px;
-        gap: 20px;
-    }
+Das System ist nicht als Ersatz bestehender Kryptografie gedacht,  
+sondern als eigenständiger Ansatz —  
+eine Sprache aus Formen, die sowohl technisch präzise  
+als auch konzeptionell offen bleibt.
 
-    .column {
-        flex: 1;
-        min-width: 320px;
-        background: white;
-        padding: 25px;
-        border-radius: 8px;
-        box-shadow: 0 2px 6px rgba(0,0,0,0.08);
-    }
+---
 
-    h2 {
-        margin-top: 30px;
-        border-bottom: 2px solid #ddd;
-        padding-bottom: 5px;
-    }
+## 📘 Whitepaper
 
-    .de {
-        border-left: 4px solid #004aad;
-    }
+Dieses Repository enthält die vollständige Dokumentation:
 
-    .en {
-        border-left: 4px solid #ad004a;
-    }
+- **Deutsche PDF‑Version**: `fatih_cipher_whitepaper.pdf`  
+- **Englische PDF‑Version**: `fatih_cipher_whitepaper_EN.pdf`  
+- **Zweisprachige Website‑Version**: `index.html`
 
-    footer {
-        text-align: center;
-        padding: 30px;
-        color: #555;
-        font-size: 0.9rem;
-    }
-</style>
-</head>
+Alle Versionen sind vollständig und final.
 
-<body>
+---
 
-<header>
-    <h1>Der Fatih‑Cipher — Zweisprachiges Whitepaper (DE/EN)</h1>
-    <p>Deutsch & Englisch parallel · Klar · Ruhig · Technopoetisch</p>
-</header>
+## 🧠 Zentrale Konzepte
 
-<div class="container">
+### **1. Form‑Sequenzen**
+Jedes Zeichen wird durch **11 feste 16‑Bit‑Hexwerte** dargestellt,  
+die ein geometrisches Muster bilden.
 
-    <!-- German Column -->
-    <div class="column de">
-        <h2>1. Vorwort — Das Erwachen des Musters</h2>
-        <p>Jede Struktur beginnt mit einer Entscheidung. Manchmal mathematisch, manchmal intuitiv. Der Fatih‑Cipher entstand aus beidem.</p>
-        <p>Er ist mehr als eine Sammlung von Hex‑Werten. Er ist der Versuch, Ordnung zu verstehen — als etwas, das Bedeutung trägt.</p>
+### **2. Index‑Codes**
+Ein zusätzlicher **16‑Bit‑Wert**, der ein Zeichen innerhalb seiner Formgruppe  
+eindeutig identifiziert.
 
-        <h2>2. Manifest — Die neue Kryptografie‑Ära</h2>
-        <p>Wir leben in einer Zeit, in der Daten sprechen. Doch ihre Sprache bleibt verborgen. Der Fatih‑Cipher ist ein Bruch mit dem Gewohnten.</p>
+### **3. v2‑Codierung**
+Ein deterministischer Block aus **12 Hex‑Werten**:  
+**11 Formwerte + 1 Indexwert**
 
-        <h2>3. Einleitung — Warum dieses System existiert</h2>
-        <p>Der Fatih‑Cipher entstand aus dem Wunsch, Struktur zu verstehen. Version 3.0 erweitert das System um XOR‑Key, Rotation und Permutation.</p>
+### **4. v3‑Transformationen**
+Version 3.0 erweitert das System um drei reversible Operationen:
 
-        <h2>4. Grundlagen — Form, Index und Bedeutung</h2>
-        <p>Ein Zeichen besteht aus Form‑Sequenz und Index‑Code. Gemeinsam bilden sie einen Block aus 12 Hex‑Werten.</p>
+- XOR‑Key  
+- Bitrotation  
+- Positionspermutation  
 
-        <h2>5. Fatih‑Cipher v2 — Die Sprache der Formen</h2>
-        <p>v2 definiert die Struktur: Formgruppen und Index‑Codes.</p>
+Alle Schritte sind vollständig invertierbar.
 
-        <h2>6. Fatih‑Cipher v3 — Transformationen im Datenraum</h2>
-        <p>v3 erweitert v2 um XOR, Rotation und Permutation. Die Entschlüsselung ist vollständig invertierbar.</p>
+---
 
-        <h2>7. Beispiele — Wenn die Theorie spricht</h2>
-        <p>Beispiele zeigen, wie Form und Index zusammenwirken.</p>
+## 📂 Repository‑Struktur
 
-        <h2>8. Anhang — Der vollständige Codex A–Z</h2>
-        <p>Die Tabelle verbindet Buchstaben, Gruppen und Index‑Codes.</p>
+---
 
-        <h2>9. Archiv‑Eintrag 47‑B — Die erste Entdeckung</h2>
-        <p>Ein Fragment aus einem beschädigten Speicherkern. Eine Spur aus der Zukunft.</p>
-    </div>
+## 🌐 Live‑Website (GitHub Pages)
 
-    <!-- English Column -->
-    <div class="column en">
-        <h2>1. Foreword — The Awakening of the Pattern</h2>
-        <p>Every structure begins with a decision. Sometimes mathematical, sometimes intuitive. The Fatih‑Cipher emerged from both.</p>
-        <p>It is more than a collection of hex values. It is an attempt to understand order as something that carries meaning.</p>
+Nach Aktivierung von GitHub Pages ist die Website erreichbar unter:
 
-        <h2>2. Manifesto — The New Era of Cryptography</h2>
-        <p>We live in a time in which data speaks. Yet its language remains hidden. The Fatih‑Cipher is a break from the familiar.</p>
+hitaf1986
 
-        <h2>3. Introduction — Why This System Exists</h2>
-        <p>The Fatih‑Cipher was created from the desire to understand structure. Version 3.0 adds XOR key, rotation, and permutation.</p>
+---
 
-        <h2>4. Fundamentals — Form, Index, and Meaning</h2>
-        <p>A character consists of a form sequence and an index code. Together they form a block of 12 hex values.</p>
+## 🛠️ Lokale Nutzung
 
-        <h2>5. Fatih‑Cipher v2 — The Language of Forms</h2>
-        <p>v2 defines the structure: form groups and index codes.</p>
+Einfach die Datei:
+index.html
 
-        <h2>6. Fatih‑Cipher v3 — Transformations in the Data Space</h2>
-        <p>v3 extends v2 with XOR, rotation, and permutation. Decryption is fully reversible.</p>
+im Browser öffnen.
 
-        <h2>7. Examples — When Theory Speaks</h2>
-        <p>Examples show how form and index interact.</p>
+---
 
-        <h2>8. Appendix — The Complete A–Z Codex</h2>
-        <p>The table links letters, groups, and index codes.</p>
+## 🤝 Mitwirken
 
-        <h2>9. Archive Entry 47‑B — The First Discovery</h2>
-        <p>A fragment from a damaged memory core. A trace from the future.</p>
-    </div>
+Beiträge, Ideen und Erweiterungen sind willkommen —  
+insbesondere:
 
-</div>
+- experimentelle Kryptografie‑Konzepte  
+- alternative Form/Index‑Zuordnungen  
+- Visualisierungen  
+- Implementierungen in verschiedenen Programmiersprachen  
 
-<footer>
-    © 2024 · Fatih‑Cipher Whitepaper · Zweisprachige Edition
-</footer>
+Pull Requests und Diskussionen sind ausdrücklich erwünscht.
 
-</body>
-</html>
+---
+
+## 📜 Lizenz
+
+Dieses Projekt steht unter der **MIT‑Lizenz**.
+
+---
+
+## ✨ Autor
+
+**Fatih Şentürk**  
+Ersteller des Fatih‑Ciphers  
+Crailsheim, Deutschland
+
+---
+
+## 🔮 Vision
+
+Der Fatih‑Cipher ist mehr als ein Algorithmus.  
+Er ist ein konzeptioneller Raum —  
+eine Brücke zwischen Struktur und Bedeutung,  
+zwischen Technik und Idee,  
+zwischen Gegenwart und Zukunft.
